@@ -1,4 +1,25 @@
 // © Copyright 2017 - Delizus by Designesia
+jQuery(document).ready(function () {
+		// revolution slider
+	jQuery("#revolution-slider").revolution({
+			sliderType: "standard",
+			sliderLayout: "fullscreen",
+			delay: 3300,
+			navigation: {
+					arrows: { enable: false }
+			},
+			parallax: {
+					type: "mouse",
+					origo: "slidercenter",
+					speed: 2000,
+					levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],
+			},
+			spinner: "off",
+			gridwidth: 1140,
+			gridheight: 600,
+			disableProgressBar: "on"
+	});
+});
 
 jQuery(document).ready(function() {
 	'use strict';				// use strict mode
