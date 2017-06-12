@@ -273,6 +273,17 @@ a.btn-slider.img-btn {
   font-size: 1.2em;
 }
 
+.preloader1.yelp-loader {
+  display: none;
+  position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 35px;
+}
+
 /* ================================================== */
 /* Delizus
 /* version: 1.1
@@ -5420,6 +5431,9 @@ a.read_more i {
     .col-xs-12.col-md-4.col-sm-6.mobile-no-padding {
       float: right;
     }
+    .yelp-wrapper {
+      width: 103%;
+    }
 }
 /* --------------------------------------------------
 	design for 768px
@@ -5427,7 +5441,7 @@ a.read_more i {
 
 @media (min-width: 768px) and (max-width: 979px) {
     .slider_text {
-        padding-top: 0px;
+      padding-top: 0px;
     }
 }
 @media only screen and (max-width: 992px) {
@@ -5869,6 +5883,35 @@ a.read_more i {
       width: 100%;
     }
 }
+@media (min-width: 768px) and (max-width: 780px) {
+  .tp-caption {
+    top: 10em;
+  }
+  section#section-slider, .tp-fullwidth-forcer {
+    height: 55vh !important;
+  }
+  header.transparent.header-mobile {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  header.transparent.header-mobile .container .row .col-md-12 {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  header.transparent.header-mobile {
+    position: fixed;
+    height: 75px;
+    background-color: transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  header.transparent.header-mobile.clone {
+    background-color: #111;
+  }
+}
 /* --------------------------------------------------
 	custom for 320px & 480px
 	/* -------------------------------------------------- */
@@ -5991,6 +6034,16 @@ a.read_more i {
         max-width: 200px;
         height: auto;
     }
+    .yelp-wrapper {
+      width: 100%;
+    }
+    .yelp-info-wrapper {
+      width: 63%;
+      position: absolute;
+      left: 120px;
+      margin-top: 8px;
+    }
+
 }
 /* --------------------------------------------------
 	design for 320px
@@ -6013,8 +6066,21 @@ a.read_more i {
         max-width: 200px;
         height: auto;
     }
-}
+    .yelp-wrapper {
+      width: 103%;
+    }
+    .yelp-info-wrapper {
+      width: 63%;
+      position: absolute;
+      left: 120px;
+      margin-top: 8px;
+    }
 
+@media only screen and (max-width: 375px) {
+  .padding60.text-center.text-light.mt-50.mb-50.shadow-soft.wow.fadeInUp.book-section.animated {
+    padding: 38px !important;
+  }
+}
 
 /*iPhone 5*/
 
@@ -6027,6 +6093,19 @@ a.read_more i {
     .social {
       font-size: 1.7em;
     }
+    .yelp-wrapper {
+      width: 114%;
+    }
+    .padding60.text-center.text-light.mt-50.mb-50.shadow-soft.wow.fadeInUp.book-section.animated {
+      padding: 10px !important;
+    }
+    .ot-dtp-picker {
+      width: 13.5em !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
 }
 
 /*iPad and Down*/

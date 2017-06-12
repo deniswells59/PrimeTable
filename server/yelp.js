@@ -3,10 +3,12 @@ import request from 'request';
 
 const router = express.Router();
 
-router.get('/reviews', (req, res) => {
+router.get('/reviews/:yelpID', (req, res) => {
+  const yelpID = req.params.yelpID;
+
   request.post('https://api.yelp.com/oauth2/token', {
       form: {
-        client_id: 'gUE3qbXwpTzDJeKA0Cy4qA',
+        client_id: process.env.CLIENT_ID,
         client_secret: process.env.CLIENT_SECRET
       }
     }, (err, resp, body) => {
@@ -14,19 +16,20 @@ router.get('/reviews', (req, res) => {
 
       let token = JSON.parse(body).access_token;
       request({
-        url: 'https://api.yelp.com/v3/businesses/prime-table-stockton-2/reviews',
+        url: `https://api.yelp.com/v3/businesses/${yelpID}`,
         headers: {
           'Authorization': `BEARER ${token}`
         }
       }, (err, resp, body) => {
         if(err) return res.status(400).send(err);
-        let data = JSON.parse(body).reviews;
-        let review;
-        data.forEach(rev => {
-          if(rev.rating === 5) return review = rev;
-        });
+        let data = JSON.parse(body);
+        // let review = { rating: 0 };
+        //
+        // data.forEach(rev => {
+        //   if(rev.rating > review.rating) return review = rev;
+        // });
 
-        res.send(review);
+        res.send(data);
       });
     });
 });
