@@ -255,30 +255,6 @@ new WOW().init();
 // sticky header
 // --------------------------------------------------
 
-    jQuery(window).on("scroll", function() {
-    	jQuery("header").addClass("clone", 1000, "easeOutBounce" );
-
-		var $document = $(document);
-		var vscroll = 0;
-
-		if ($document.scrollTop() >= 50 && vscroll==0) {
-			jQuery("header.autoshow").removeClass("scrollOff");
-			jQuery("header.autoshow").addClass("scrollOn");
-			jQuery("header.autoshow").css("height","auto");
-			vscroll = 1;
-		 } else {
-			jQuery("header.autoshow").removeClass("scrollOn");
-			jQuery("header.autoshow").addClass("scrollOff");
-			vscroll = 0;
-		 }
-
-		$.stellar({
-			horizontalScrolling: false,
-			verticalOffset: 0
-		});
-  });
-
-
 	function init_resize(){
 	enquire.register("screen and (min-width: 993px)", {
 		match : function() {

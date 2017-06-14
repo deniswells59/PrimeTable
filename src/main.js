@@ -23,11 +23,13 @@
       var top = $(this).scrollTop();
       if(top === 0) {
         $('header.transparent').removeClass('clone');
+      } else {
+        showMenu();
       }
     })
     // Function declarations
     function showMenu() {
-      $('header.transparent.header-mobile').addClass('clone');
+      $('header.transparent').addClass('clone');
     }
 
     function galleryWrapperInit() {

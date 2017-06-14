@@ -1319,6 +1319,9 @@ i.btn-action-hide {
       left: 120px;
       margin-top: 8px;
     }
+    section#section-gallery {
+      padding: 8em 0 0em;
+    }
   }
 
 @media only screen and (max-width: 375px) {
