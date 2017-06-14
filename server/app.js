@@ -7,6 +7,7 @@ import http from 'http';
 import path from 'path';
 import morgan from 'morgan';
 import helmet from 'helmet';
+import compression from 'compression';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import favicon from 'serve-favicon';
@@ -24,6 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(favicon(path.join(__dirname, '../public/images/favicon.ico')));
 app.use(express.static(path.join(__dirname, '../public')));
+app.use(compression());
 // app.set('view engine', 'ejs');
 
 app.use('/api', require('./yelp'));
