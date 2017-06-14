@@ -19,13 +19,13 @@ const server = http.createServer(app);
 app.use(morgan('dev'));
 app.enable('trust proxy');
 app.use(helmet());
+app.use(compression());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(favicon(path.join(__dirname, '../public/images/favicon.ico')));
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(compression());
 // app.set('view engine', 'ejs');
 
 app.use('/api', require('./yelp'));
