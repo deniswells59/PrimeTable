@@ -1,6 +1,9 @@
 a:hover {
   text-decoration: none;
 }
+a:focus {
+  text-decoration: none;
+}
 header.transparent.smaller.clone, header.transparent.header-mobile.clone {
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
 }
@@ -114,7 +117,7 @@ section.about-section {
 }
 
 .about-column {
-  padding: 10em 4em;
+  padding: 7em 4em;
   background-color: #000;
 }
 
@@ -125,7 +128,7 @@ section.about-section {
 }
 
 .about-column, .about-left, .about-right {
-  height: 600px;
+  height: 775px;
 }
 
 .about-left {
@@ -137,11 +140,11 @@ section.about-section {
 }
 
 .about-left, .about-right {
-  width: 30%;
+  width: 25%;
 }
 
 .about-column {
-  width: 40%;
+  width: 50%;
 }
 
 section#section-services-tab {
@@ -1043,11 +1046,30 @@ i.btn-action-hide {
     .yelp-wrapper {
       width: 103%;
     }
+    .about-left, .about-right {
+      width: 20%;
+    }
+    .about-column {
+      width: 60%;
+    }
+    .about-column, .about-left, .about-right {
+      height: 825px;
+    }
 }
 /* --------------------------------------------------
 	design for 768px
 	/* ================================================== */
 @media only screen and (max-width: 992px) {
+  .about-column {
+      padding: 6em 2em;
+      width: 60%;
+    }
+    .about-column, .about-left, .about-right {
+      height: 890px;
+    }
+    .about-left, .about-right {
+      width: 20%;
+    }
     #menu-btn {
         display: block;
         position: relative;
@@ -1157,13 +1179,6 @@ i.btn-action-hide {
     section#section-slider, .tp-fullwidth-forcer {
       height: 85vh !important;
     }
-    .about-left, .about-right {
-      width: 25%;
-    }
-    .about-column {
-      padding: 10em 2em;
-      width: 50%;
-    }
     .gallery-wrapper .container .col-sm-6 {
       padding-right: 30px;
       padding-left: 30px;
@@ -1216,6 +1231,10 @@ i.btn-action-hide {
 	/* -------------------------------------------------- */
 
 @media only screen and (max-width: 767px) {
+    .about-column, .about-left, .about-right {
+      height: 1025px;
+      border-bottom: 2px solid #b31212;
+    }
     .legal.hidden-md.hidden-lg {
       margin-top: 4em;
     }
@@ -1242,7 +1261,7 @@ i.btn-action-hide {
 
     .about-column {
       width: auto;
-      padding: 10em 2em;
+      padding: 6em 2em;
       background-color: #000;
     }
     .hours-box {
@@ -1311,6 +1330,9 @@ i.btn-action-hide {
 /*iPhone 5*/
 
 @media only screen and (max-width: 320px) {
+    .about-column {
+      height: 1185px;
+    }
 
     .footer-info-box {
       font-size: 1.3em;

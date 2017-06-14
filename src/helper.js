@@ -528,7 +528,7 @@ new WOW().init();
 	jQuery('li').find('.v-border').fadeTo(150,0);
 	jQuery('li.active').find('.v-border').fadeTo(150,1);
 
-	jQuery('.de_nav li').on("click", function() {
+	jQuery('li.menu-changer').on("click", function() {
 		var dtc = jQuery(this).parent().parent().find('.de_tab_content');
 		var	dtc_h = dtc.css("height");
 

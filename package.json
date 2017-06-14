@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/babel-node ./server/app.js",
+    "bundle": "uglifyjs --compress --mangle -o ./public/js/helper.min.js ./src/helper.js",
     "scss": "./node_modules/.bin/node-sass ./server/yelp.scss ./public/css/yelp.css"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "morgan": "^1.8.2",
     "node-sass": "^4.5.3",
     "request": "^2.81.0",
-    "serve-favicon": "^2.4.3"
+    "serve-favicon": "^2.4.3",
+    "uglify-js": "^3.0.15"
   }
 }
