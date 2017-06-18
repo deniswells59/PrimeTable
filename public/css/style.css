@@ -23,8 +23,6 @@ section.about-section{padding:0;}
 .about-column{padding:7em 4em;background-color:#000;}
 .about-column p.center{text-align:center;font-size:1.3em;font-family:'Arial';}
 .about-column, .about-left, .about-right{height:775px;}
-.about-left{background-image:url('/images/about-left.png');}
-.about-right{background-image:url('/images/about-right.png');}
 .about-left, .about-right{width:25%;}
 .about-column{width:50%;}
 section#section-services-tab{background-color:#141414;}
@@ -72,7 +70,7 @@ header.smaller{height:70px;background:#18181d;}
 #mainmenu li:last-child a:after{display:none;}
 #mainmenu.line-separator li a:after{content:"/";font-size:14px;}
 #menu-btn{display:none;float:right;margin-top:5px;width:36px;height:36px;background:#333;padding:6px;text-align:center;cursor:pointer;}
-#menu-btn:before{font-family:FontAwesome;content:"\f0c9";font-size:24px;color:#eceff3;}
+#menu-btn:before{font-size:24px;color:#eceff3;}
 #menu-btn:hover{background:#fff;}
 #menu-btn:hover:before{color:#222;}
 #content{width:100%;background:#fff;padding:90px 0 90px 0;z-index:100;}
@@ -134,7 +132,7 @@ to{-webkit-transform:rotate(360deg);}
 .de_tab .de_nav li.active span{background:#FFF;border-bottom:1px solid #fff;color:#222;margin-bottom:-3px;}
 .de_tab .de_nav li.active span{background:#27282b;border-bottom:1px solid #27282b;color:#ccc;}
 .de_tab.tab_style_1 .de_nav{text-align:center;}
-.de_tab.tab_style_1 .de_nav li{margin:5px;border:solid 2px rgba(255, 255, 255, .1);background:none;display:inline-block;float:none;}
+.de_tab.tab_style_1 .de_nav li{margin:5px;border:solid 2px rgb(179, 18, 18);background:none;display:inline-block;float:none;}
 .de_tab.tab_style_1 .de_nav li,
 .de_tab.tab_style_1 .de_nav li span{-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;transition:all 0.2s ease-out;}
 .de_tab.tab_style_1 .de_nav li span{font-family:"Oswald";padding:5px 30px 5px 30px;background:none;color:#fff;border:none;letter-spacing:2px;text-transform:uppercase;font-size:13px !important;}
@@ -188,6 +186,9 @@ section#section-slider, .tp-fullwidth-forcer{height:65vh !important;}
 .about-left, .about-right{width:20%;}
 .about-column{width:60%;}
 .about-column, .about-left, .about-right{height:825px;}
+.social{margin:1em 0em}
+.right-arrow{right:0% !important;}
+.left-arrow{left:0% !important;}
 }
 @media only screen and (max-width:992px){.about-column{padding:6em 2em;width:60%;}
 .about-column, .about-left, .about-right{height:890px;}
@@ -220,16 +221,18 @@ header.header-mobile #mainmenu li a{color:#eceff3;}
 section#section-slider, .tp-fullwidth-forcer{height:85vh !important;}
 .gallery-wrapper .container .col-sm-6{padding-right:30px;padding-left:30px;}
 .footer-logo-wrapper{text-align:center;}
-.social{font-size:1.5em;}
+.social{font-size:1.5em;margin: 1em 0;}
 .arrow-wrapper{z-index:1000000 !important;}
 .footer-info-box{width:100%;}
 }
-@media (min-width:768px) and (max-width:780px){.tp-caption{top:10em;}
-section#section-slider, .tp-fullwidth-forcer{height:55vh !important;}
+@media (min-width:768px) and (max-width:780px){.tp-caption{top:20em;}
+section#section-slider, .tp-fullwidth-forcer{height:70vh !important;}
 header.transparent.header-mobile{padding-bottom:0;padding-top:10px;}
 header.transparent.header-mobile .container .row .col-md-12{padding-bottom:0;padding-top:10px;}
 header.transparent.header-mobile{position:fixed;height:75px;background-color:transparent;-webkit-transition:all 0.2s ease-out;-moz-transition:all 0.2s ease-out;-ms-transition:all 0.2s ease-out;-o-transition:all 0.2s ease-out;transition:all 0.2s ease-out;}
 header.transparent.header-mobile.clone{background-color:#111;}
+.right-arrow{right:0% !important;}
+.left-arrow{left:0% !important;}
 }
 @media only screen and (max-width:767px){.about-column, .about-left, .about-right{height:1025px;border-bottom:2px solid #b31212;}
 .legal.hidden-md.hidden-lg{margin-top:4em;}
@@ -258,7 +261,7 @@ section#section-gallery{padding:8em 0 0em;}
 }
 @media only screen and (max-width:320px){.about-column{height:1185px;}
 .footer-info-box{font-size:1.3em;}
-.social{font-size:1.7em;}
+.social{font-size:1.4em;}
 .yelp-wrapper{width:114%;}
 .padding60.text-center.text-light.mt-50.mb-50.shadow-soft.wow.fadeInUp.book-section.animated{padding:10px !important;}
 }

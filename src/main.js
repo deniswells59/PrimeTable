@@ -27,6 +27,14 @@
         showMenu();
       }
     })
+
+    if($(window).width() > 430) {
+      $('.about-left').css('background-image', 'url("/images/about-left.png")');
+      $('.about-right').css('background-image', 'url("/images/about-right.png")');
+      $('#header').attr('src', 'images/header.jpg');
+    } else {
+      $('#header').attr('src', 'images/header_mobile.jpg');
+    }
     // Function declarations
     function showMenu() {
       $('header.transparent').addClass('clone');

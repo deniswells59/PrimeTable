@@ -3,7 +3,7 @@ function yelpInit(id) {
 
   $.ajax('/api/reviews/' + id)
     .done(function(data) {
-      $(yelpBox).parent('yelp-custom-link').attr('href', data.url);
+      $(yelpBox).parent().attr('href', data.url);
       $(yelpBox).find('.yelp-img-wrapper img').attr('src', data.image_url);
       $(yelpBox).find('.yelp-title').text(data.name);
       $(yelpBox).find('.rating').attr('data-rating', data.rating);
