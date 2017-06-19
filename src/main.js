@@ -54,7 +54,7 @@
       e.preventDefault();
       var section = $(this).data('nav');
 
-      if($(window).width() < 430) {
+      if($(window).width() < 1025) {
         toggleMenu();
       }
 
