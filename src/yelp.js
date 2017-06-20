@@ -15,3 +15,5 @@ function yelpInit(id) {
       console.log('err', err);
     })
 }
+
+yelpInit('prime-table-stockton-2');

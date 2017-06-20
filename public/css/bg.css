@@ -1,6 +1,0 @@
-section{-webkit-background-size:100% !important;-moz-background-size:100% !important;-o-background-size:100% !important;background-size:100% !important;}
-#section-book-form{background:url(../images/book_image.jpg) top fixed;}
-@media only screen and (min-device-width:768) and (max-device-width:1024) and (orientation:portrait){section{-webkit-background-size:auto 100% !important;-moz-background-size:auto 100% !important;-o-background-size:auto 100% !important;background-size:auto 100% !important;background-attachment:scroll !important;}
-}
-@media only screen and (max-width:480px){section{-webkit-background-size:auto 100% !important;-moz-background-size:auto 100% !important;-o-background-size:auto 100% !important;background-size:auto 100% !important;background-attachment:scroll !important;}
-}

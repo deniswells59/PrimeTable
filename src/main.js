@@ -9,7 +9,6 @@
 
     var galleryItem;
     galleryWrapperInit();
-    yelpInit('prime-table-stockton-2');
 
     // Events
     $('#menu-btn').click(showMenu);
