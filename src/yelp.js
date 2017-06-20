@@ -1,7 +1,7 @@
 function yelpInit(id) {
   var yelpBox = $('.yelp-wrapper');
 
-  $.ajax('/api/reviews/' + id)
+  $.ajax('//primetable.herokuapp.com/api/reviews/' + id)
     .done(function(data) {
       $(yelpBox).parent().attr('href', data.url);
       $(yelpBox).find('.yelp-img-wrapper img').attr('src', data.image_url);
