@@ -16,9 +16,15 @@ import favicon from 'serve-favicon';
 const app = express();
 const port = process.env.PORT || 3000;
 const server = http.createServer(app);
+const whitelist = ['http://primetablestk.com', 'http://www.primetablestk.com'];
 const corsOptions = {
-  origin: 'http://primetablestk.com',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+  origin: function (origin, cb) {
+    if (whitelist.indexOf(origin) !== -1) {
+      cb(null, true);
+    } else {
+      cb(new Error('Not allowed by CORS'));
+    }
+  }
 }
 
 app.use(morgan('dev'));

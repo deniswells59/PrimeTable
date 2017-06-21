@@ -12,7 +12,20 @@ function yelpInit(id) {
       $(yelpBox).removeClass('loading');
     })
     .fail(function(err) {
-      console.log('err', err);
+      var err = $('<p>').addClass('center').text('An error occurred while connecting.')
+      var prompt = $('<p>').addClass('center').text('Click Here to go to Yelp.')
+      var link = $('<a>').attr({
+        'href': 'https://www.yelp.com/biz/prime-table-stockton-2',
+        'target': '_blank'
+      })
+      .append(prompt);
+
+      $(yelpBox).parent().attr({
+        'href': 'https://www.yelp.com/biz/prime-table-stockton-2',
+        'target': '_blank'
+      });
+      $('.yelp-loader').remove();
+      $(yelpBox).append([err, link]);
     })
 }
 

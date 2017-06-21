@@ -20,7 +20,7 @@ span.teaser.center{font-family:'Open Sans', Arial;letter-spacing:4px;font-size:.
 h2 .small-border{margin-bottom:5px !important;}
 h2.center{text-align:center;}
 section.about-section{padding:0;}
-.about-column{padding:7em 4em;background-color:#000;}
+.about-column{padding:7em 8em;background-color:#000;}
 .about-column p.center{text-align:center;font-size:1.3em;font-family:'Arial';}
 .about-column, .about-left, .about-right{height:775px;}
 .about-left, .about-right{width:25%;}
@@ -68,7 +68,7 @@ header.smaller{height:70px;background:#18181d;}
 #mainmenu a{display:inline-block;padding:30px 0px 15px 20px;text-decoration:none;color:#fff;text-align:center;outline:none;}
 #mainmenu li a:after{float:right;position:relative;font-family:"FontAwesome";content:"\f111";font-size:6px;margin-left:20px;margin-top:0px;color:#f7c51e;font-weight:normal;}
 #mainmenu li:last-child a:after{display:none;}
-#mainmenu.line-separator li a:after{content:"/";font-size:14px;}
+#mainmenu.line-separator li a:after{content:"/";font-size:20px;font-weight:900;}
 #menu-btn{display:none;float:right;margin-top:5px;width:36px;height:36px;background:#333;padding:6px;text-align:center;cursor:pointer;}
 #menu-btn:before{font-size:24px;color:#eceff3;}
 #menu-btn:hover{background:#fff;}
@@ -278,7 +278,7 @@ section{-webkit-background-size:100% !important;-moz-background-size:100% !impor
 .yelp-wrapper.loading .preloader1{display:block;}
 .yelp-wrapper.loading .yelp-img-wrapper,
 .yelp-wrapper.loading .yelp-info-wrapper{display:none;}
-.yelp-wrapper{width:90%;height:110px;background-color:#fcfcfc;border-radius:3px;border:1px solid gray;margin-left:auto;margin-right:auto;}
+.yelp-wrapper{width:90%;height:110px;background-color:#f5f5f5;border-radius:3px;border:1px solid gray;margin-left:auto;margin-right:auto;}
 .yelp-img-wrapper{width:38%;position:absolute;}
 .yelp-info-wrapper{width:52%;position:absolute;left:150px;margin-top:8px;}
 .yelp-info-wrapper p{margin-bottom:0px;}
@@ -508,3 +508,5 @@ border-left-color:#b31212;
 100%{opacity:1;-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);}
 }
 .fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;}
+.yelp-wrapper p.center {color: rgba(0,0,0,.87);}
+.me {font-family: 'Oswald';text-align: center;font-size: 10px;font-weight: 100;letter-spacing: 1px;}
