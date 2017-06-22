@@ -177,9 +177,10 @@ i.btn-action-hide{opacity:0;}
 .center-xy i.btn-action:hover{border-color:rgba(255, 255, 255, 0);background:rgba(255, 255, 255, .3);}
 .wow{visibility:hidden;}
 .shadow-soft{-webkit-box-shadow:3px 3px 20px 0px rgba(0, 0, 0, 0.3);-moz-box-shadow:3px 3px 20px 0px rgba(0, 0, 0, 0.3);box-shadow:3px 3px 20px 0px rgba(0, 0, 0, 0.3);}
-@media(min-width:980px) and (max-width:1199px){header #mainmenu a{padding-left:5px;padding-right:5px;}
+@media(min-width:980px) and (max-width:2050px){.hours-box{font-size:1.5em;}}
+@media(min-width:980px) and (max-width:1024px){header #mainmenu a{padding-left:5px;padding-right:5px;}
 #mainmenu li a:after{margin-left:15px;}
-section#section-slider, .tp-fullwidth-forcer{height:65vh !important;}
+section#section-slider, .tp-fullwidth-forcer{height:85vh !important;}
 .hours-box{width:22vw;}
 .col-xs-12.col-md-4.col-sm-6.mobile-no-padding{float:right;}
 .yelp-wrapper{width:103%;}
@@ -217,7 +218,7 @@ header.header-mobile #mainmenu li a{color:#eceff3;}
 .container .col-md-6{margin-bottom:30px;}
 .container .col-md-12{margin-bottom:30px;}
 .hours-box{width:30vw;}
-.tp-caption{top:15em;}
+.tp-caption{top:14em;}
 section#section-slider, .tp-fullwidth-forcer{height:85vh !important;}
 .gallery-wrapper .container .col-sm-6{padding-right:30px;padding-left:30px;}
 .footer-logo-wrapper{text-align:center;}
@@ -225,7 +226,7 @@ section#section-slider, .tp-fullwidth-forcer{height:85vh !important;}
 .arrow-wrapper{z-index:1000000 !important;}
 .footer-info-box{width:100%;}
 }
-@media (min-width:768px) and (max-width:780px){.tp-caption{top:20em;}
+@media (min-width:768px) and (max-width:780px){.tp-caption{top:12em;}
 section#section-slider, .tp-fullwidth-forcer{height:70vh !important;}
 header.transparent.header-mobile{padding-bottom:0;padding-top:10px;}
 header.transparent.header-mobile .container .row .col-md-12{padding-bottom:0;padding-top:10px;}
@@ -510,3 +511,5 @@ border-left-color:#b31212;
 .fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;}
 .yelp-wrapper p.center {color: rgba(0,0,0,.87);}
 .me {font-family: 'Oswald';text-align: center;font-size: 10px;font-weight: 100;letter-spacing: 1px;}
+.animated{opacity: 0;}
+.animated.fadeInUp,.animated.fadeInLeft,.animated.fadeInRight{opacity: 1;}

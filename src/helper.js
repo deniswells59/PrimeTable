@@ -7,7 +7,7 @@ jQuery(document).ready(function () {
 			delay: 3300,
 			navigation: {
 					arrows: { enable: false }
-			},``
+			},
 			spinner: "off",
 			gridwidth: 1140,
 			gridheight: 600,
@@ -164,14 +164,6 @@ jQuery(document).ready(function() {
 		}
 
 	});
-
-
-
-
-
-// wow jquery
-
-new WOW().init();
 
 // --------------------------------------------------
 // init
@@ -660,19 +652,6 @@ new WOW().init();
 
 	init();
 
-		jQuery('.animated').fadeTo(0,0);
-		jQuery('.animated').each(function(){
-		var imagePos = jQuery(this).offset().top;
-		var timedelay = jQuery(this).attr('data-delay');
-
-		var topOfWindow = jQuery(window).scrollTop();
-			if (imagePos < topOfWindow+300) {
-				jQuery(this).fadeTo(1,500);
-				var $anim = jQuery(this).attr('data-animation');
-			}
-		});
-
-
 		// btn arrow up
 		jQuery(".arrow-up").on("click", function() {
 			jQuery(".coming-soon .coming-soon-content").fadeOut("medium",function(){
@@ -712,22 +691,6 @@ new WOW().init();
 		var topOfWindow = jQuery(window).scrollTop();
 			if (pos_y < topOfWindow+500) {
 				jQuery(this).find(".progress-bar").animate({'width': value },"slow");
-			}
-		});
-
-
-		jQuery('.animated').each(function(){
-		var imagePos = jQuery(this).offset().top;
-		var timedelay = jQuery(this).attr('data-delay');
-
-		var topOfWindow = jQuery(window).scrollTop();
-			if (imagePos < topOfWindow+500) {
-				jQuery(this).delay(timedelay).queue(function(){
-					jQuery(this).fadeTo(1,500);
-					var $anim = jQuery(this).attr('data-animation');
-					jQuery(this).addClass($anim).clearQueue();
-				});
-
 			}
 		});
 
