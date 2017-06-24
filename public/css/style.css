@@ -250,6 +250,8 @@ img.logo{width:80%;}
 .de_tab .de_nav li{display:block;width:100%;}
 .footer-info-box{width:100%}
 }
+@media only screen and (min-width:330px) and (max-width:375px){.padding60{padding: 40px;}}
+@media only screen and (max-width:330px) {.padding60{padding: 10px;}}
 @media only screen and (min-width:480px) and (max-width:767px){.container{padding-left:30px;padding-right:30px;}
 .yelp-wrapper{width:100%;}
 .yelp-info-wrapper{width:63%;position:absolute;left:120px;margin-top:8px;}
@@ -513,3 +515,4 @@ border-left-color:#b31212;
 .me {font-family: 'Oswald';text-align: center;font-size: 10px;font-weight: 100;letter-spacing: 1px;}
 .animated{opacity: 0;}
 .animated.fadeInUp,.animated.fadeInLeft,.animated.fadeInRight{opacity: 1;}
+.hidden{display: none;}

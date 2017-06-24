@@ -393,6 +393,6 @@
     }
 
     var galleryCurrent = 0;
-    var gallery = ['bar', 'bottles', 'plates', 'entry', 'fireplace', 'bacon', 'interior', 'dessert'];
+    var gallery = ['bar', 'plates', 'entry', 'steak3', 'bacon', 'fireplace', 'steak1', 'dessert', 'shrimp', 'interior', 'steak2', 'bottles'];
   }
 })();

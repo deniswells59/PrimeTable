@@ -436,8 +436,6 @@ jQuery(document).ready(function() {
 		$(this).parent().parent().find('.blog-slide').trigger('owl.prev');
 	});
 
-
-
 // --------------------------------------------------
 // custom positiion
 // --------------------------------------------------
